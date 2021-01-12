@@ -66,7 +66,7 @@ class EntriesController < ApplicationController
     def set_entry
       @entry = Entry.find(params[:id])
     end
-
+  
     # Only allow a list of trusted parameters through.
     def entry_params
       params.require(:entry).permit(:meal_type, :calories, :proteins, :carbohydrates, :fats, :integer)
