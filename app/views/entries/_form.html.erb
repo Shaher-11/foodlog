@@ -1,47 +1,52 @@
 <%= form_with(model: entry) do |form| %>
   <% if entry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
 
+
+    <div class="message is-danger">
+    <div class="message-header">
+      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+       </div>
+       <div class="message-body">
       <ul>
         <% entry.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
+   </div>
     </div>
   <% end %>
 
   <div class="field">
-    <%= form.label :meal_type %>
-    <%= form.text_field :meal_type %>
+    <%= form.label :meal_type, class: "label" %>
+    <%= form.text_field :meal_type, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :calories %>
-    <%= form.number_field :calories %>
+    <%= form.label :calories, class: "label" %>
+    <%= form.number_field :calories, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :proteins %>
-    <%= form.number_field :proteins %>
+    <%= form.label :proteins, class: "label" %>
+    <%= form.number_field :proteins, class: "input"%>
   </div>
 
   <div class="field">
-    <%= form.label :carbohydrates %>
-    <%= form.number_field :carbohydrates %>
+    <%= form.label :carbohydrates, class: "label" %>
+    <%= form.number_field :carbohydrates, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :fats %>
-    <%= form.text_field :fats %>
+    <%= form.label :fats, class: "label" %>
+    <%= form.text_field :fats, class: "input"%>
   </div>
 
   <div class="field">
-    <%= form.label :integer %>
-    <%= form.text_field :integer %>
+    <%= form.label :integer, class: "label" %>
+    <%= form.text_field :integer, class: "input" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit  class: "button is-success" %>
   </div>
 <% end %>

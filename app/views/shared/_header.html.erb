@@ -1,13 +1,37 @@
 
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Primary title
+<section class="hero is-primary is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+        <%= link_to root_path, class: "navbar-item" do %>
+       <span class="has-text-weight-bold is-size-4 ml-4">FoodLog</span>
+        <% end %>
+           </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+          <h1 class="title">
+        <%if content_for(:title) %>
+        <%= yield :title %>
+        <% else %>
+        <% end %>
       </h1>
-      <h2 class="subtitle">
-        Primary subtitle
-      </h2>
-    </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+          <span class="navbar-item">
+            <%= link_to "Create new entry", new_entry_path, class: "button is-success" %>
+            </span>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
-</section>
+
+  <!-- Hero content: will be in the middle -->
+  
