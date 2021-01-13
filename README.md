@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FoodLog is a simple applicatio built with rails with web crunch as way to get practice rails and sharpen my skills to keep track of the healthy food as it gives user the ability to add the number of calories as well as the fat and the protein for each meal.
 
-Things you may want to cover:
+to run the app on the local server, download the app or clone it, then run < rails server > or < rails s > without the brackets.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
