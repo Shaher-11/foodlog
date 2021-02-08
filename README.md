@@ -1,4 +1,4 @@
-# README
+# foodlog
 
 FoodLog is a simple application built with rails with web crunch as way to get practice rails and sharpen my skills to keep track of the healthy food as it gives user the ability to add the number of calories as well as the fat and the protein for each meal.
 
